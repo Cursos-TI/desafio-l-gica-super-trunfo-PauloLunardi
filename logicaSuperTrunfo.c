@@ -32,8 +32,33 @@ int main() {
     float super_poder_1;
     float super_poder_2;
 
+    // Automação das entradas para teste automatizado
+   estado_1 = 'A';
+   estado_2 = 'B';
+   strcpy(codigo_carta_1, "A01");
+   strcpy(codigo_carta_2, "B02");
+
+   strcpy(codigo_uf_carta_1, "SP");
+   strcpy(codigo_uf_carta_2, "RJ");
+
+   strcpy(cidade_1, "São Paulo");
+   strcpy(cidade_2, "Rio de Janeiro");
+   populacao_1 = 12325000;
+   populacao_2 = 6748000;
+   area_cidade_1 = 1521.11;
+   area_cidade_2 = 1200.25;
+   densidade_populacional_1 = 8102.47;
+   densidade_populacional_2 = 5622.24;
+   pib_1 = 699.28;
+   pib_2 = 300.50;
+   pib_per_capita_1;
+   pib_per_capita_2;
+   num_pts_turisticos_1 = 50;
+   num_pts_turisticos_2 = 30;
+
     // Cadastro das Cartas:
     //Área para entrada de dados da carta 1
+    /*
   printf("Digite a letra que representa o 1º estado: ");
     scanf(" %c", &estado_1);
 
@@ -95,6 +120,7 @@ int main() {
 
   printf("Digite a quantidade de pontos turísticos na cidade: ");
     scanf(" %d", &num_pts_turisticos_2); 
+    */
 
         // Cálculo da Densidade Populacional = população / área
 
@@ -120,10 +146,10 @@ int main() {
 
   super_poder_2 = (float)populacao_2 + (float)area_cidade_2 + ((float)pib_2 * 1000000000) + (float)num_pts_turisticos_2 + (float)pib_per_capita_2 + (float)inverso_dens_população_2;
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
+
+    // Lógica desafio iniciante
+    /*
     // Comparação de Cartas: População
     printf("\n");
     printf("*** Comparação de cartas (Atributo: População): ***\n");
@@ -200,6 +226,12 @@ int main() {
     } else {
         printf("Resultado: Carta 2 (%s) venceu!\n", cidade_2);
    }
+
+  */
+
+  // Lógica Desafio: Nivel aventureiro
+  printf("Super Trunfo Cidades\n");
+  printf("Escolha uma opção:\n");
 
     return 0;
 }
